@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12465B18E87BEAA48C0657F8 /* libPods-SNZCrashAnalyzer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6A753FEB6D109D56F39C0 /* libPods-SNZCrashAnalyzer.a */; };
+		37DA314B31CD332C246E476A /* libPods-SchnauzerApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79444A52BC44F98AABEC73 /* libPods-SchnauzerApplication.a */; };
+		C0080D91276C9BAF00510D6A /* SNZCrashAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */; };
+		C0080D9D276C9C5100510D6A /* SNZCrashAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */; };
+		C0080D9E276C9C5800510D6A /* SNZCrashAnalyzer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0080D90276C9BAF00510D6A /* SNZCrashAnalyzer.h */; };
+		C0080DD3276EF3BB00510D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0080DCD276EF3BB00510D6A /* Assets.xcassets */; };
+		C0080DD4276EF3BB00510D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0080DCE276EF3BB00510D6A /* LaunchScreen.storyboard */; };
+		C0080DD5276EF3BB00510D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD0276EF3BB00510D6A /* main.m */; };
+		C0080DD6276EF3BB00510D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD1276EF3BB00510D6A /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0080D9F276C9C9000510D6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B88DB4BF22EAF14B003D20F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0080D94276C9C4100510D6A;
+			remoteInfo = SNZCrashAnalyzer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8FC6C0722EF0540005B91DE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${TARGETNAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0080D97276C9C4100510D6A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${TARGETNAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				C0080D9E276C9C5800510D6A /* SNZCrashAnalyzer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34CB807818503565709FB660 /* Pods-SNZCrashAnalyzer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNZCrashAnalyzer.debug.xcconfig"; path = "Target Support Files/Pods-SNZCrashAnalyzer/Pods-SNZCrashAnalyzer.debug.xcconfig"; sourceTree = "<group>"; };
+		411583239D04737E3419466C /* Pods-SNZCrashAnalyzer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNZCrashAnalyzer.release.xcconfig"; path = "Target Support Files/Pods-SNZCrashAnalyzer/Pods-SNZCrashAnalyzer.release.xcconfig"; sourceTree = "<group>"; };
+		476436C1F1141CBC5B95FCCD /* Pods-SchnauzerApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchnauzerApplication.debug.xcconfig"; path = "Target Support Files/Pods-SchnauzerApplication/Pods-SchnauzerApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB6A753FEB6D109D56F39C0 /* libPods-SNZCrashAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNZCrashAnalyzer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD07D0B4D6CEA46A807828C /* Pods-SchnauzerApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchnauzerApplication.release.xcconfig"; path = "Target Support Files/Pods-SchnauzerApplication/Pods-SchnauzerApplication.release.xcconfig"; sourceTree = "<group>"; };
+		7F79444A52BC44F98AABEC73 /* libPods-SchnauzerApplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SchnauzerApplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85D459E240E7CF100CBF758 /* SchnauzerLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SchnauzerLibrary; sourceTree = "<group>"; };
+		B85D45A3240E84DA00CBF758 /* SchnauzerApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchnauzerApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DB4C722EAF14B003D20F6 /* libSchnauzerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSchnauzerLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88E959426820FC3008CDA4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B8FC6C0D22EF0540005B91DE /* libSchnauzerLibraryTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSchnauzerLibraryTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0080D87276C9A6500510D6A /* Schnauzer.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = Schnauzer.rb; sourceTree = "<group>"; };
+		C0080D88276C9A6500510D6A /* SchnauzerLibraryMerge.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SchnauzerLibraryMerge.sh; sourceTree = "<group>"; };
+		C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNZCrashAnalyzer.m; sourceTree = "<group>"; };
+		C0080D90276C9BAF00510D6A /* SNZCrashAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNZCrashAnalyzer.h; sourceTree = "<group>"; };
+		C0080D92276C9C0D00510D6A /* SchnauzerLibrary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SchnauzerLibrary.podspec; sourceTree = "<group>"; };
+		C0080D93276C9C0D00510D6A /* Schnauzer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Schnauzer.podspec; sourceTree = "<group>"; };
+		C0080D9C276C9C4100510D6A /* libSNZCrashAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNZCrashAnalyzer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0080DCC276EF3BB00510D6A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C0080DCD276EF3BB00510D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0080DCF276EF3BB00510D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0080DD0276EF3BB00510D6A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0080DD1276EF3BB00510D6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C0080DD2276EF3BB00510D6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74F125AF14E237608D460ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B85D45A0240E84DA00CBF758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DA314B31CD332C246E476A /* libPods-SchnauzerApplication.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC6C0622EF0540005B91DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0080D96276C9C4100510D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12465B18E87BEAA48C0657F8 /* libPods-SNZCrashAnalyzer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727C23DF9626E187881E24E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34CB807818503565709FB660 /* Pods-SNZCrashAnalyzer.debug.xcconfig */,
+				411583239D04737E3419466C /* Pods-SNZCrashAnalyzer.release.xcconfig */,
+				476436C1F1141CBC5B95FCCD /* Pods-SchnauzerApplication.debug.xcconfig */,
+				7BD07D0B4D6CEA46A807828C /* Pods-SchnauzerApplication.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5160D53B1EC82513AFE4872 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB6A753FEB6D109D56F39C0 /* libPods-SNZCrashAnalyzer.a */,
+				7F79444A52BC44F98AABEC73 /* libPods-SchnauzerApplication.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B879143A235233EE00FC63C1 /* SchnauzerPodSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				C0080D93276C9C0D00510D6A /* Schnauzer.podspec */,
+				C0080D92276C9C0D00510D6A /* SchnauzerLibrary.podspec */,
+			);
+			name = SchnauzerPodSpecs;
+			sourceTree = "<group>";
+		};
+		B879143B235237F500FC63C1 /* Shells */ = {
+			isa = PBXGroup;
+			children = (
+				C0080D87276C9A6500510D6A /* Schnauzer.rb */,
+				C0080D88276C9A6500510D6A /* SchnauzerLibraryMerge.sh */,
+			);
+			name = Shells;
+			sourceTree = "<group>";
+		};
+		B88DB4BE22EAF14B003D20F6 = {
+			isa = PBXGroup;
+			children = (
+				B88DB4C922EAF14B003D20F6 /* Schnauzer */,
+				C0080DCB276EF3BB00510D6A /* SchnauzerApplication */,
+				B88DB4C822EAF14B003D20F6 /* Products */,
+				727C23DF9626E187881E24E6 /* Pods */,
+				B5160D53B1EC82513AFE4872 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B88DB4C822EAF14B003D20F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B88DB4C722EAF14B003D20F6 /* libSchnauzerLibrary.a */,
+				B8FC6C0D22EF0540005B91DE /* libSchnauzerLibraryTemplate.a */,
+				B85D45A3240E84DA00CBF758 /* SchnauzerApplication.app */,
+				C0080D9C276C9C4100510D6A /* libSNZCrashAnalyzer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B88DB4C922EAF14B003D20F6 /* Schnauzer */ = {
+			isa = PBXGroup;
+			children = (
+				B8FC6AFB22EF01C9005B91DE /* Schnauzer */,
+				B85D459E240E7CF100CBF758 /* SchnauzerLibrary */,
+				B879143A235233EE00FC63C1 /* SchnauzerPodSpecs */,
+				B88E959226820F78008CDA4D /* Readme */,
+				B879143B235237F500FC63C1 /* Shells */,
+			);
+			name = Schnauzer;
+			sourceTree = "<group>";
+		};
+		B88E959226820F78008CDA4D /* Readme */ = {
+			isa = PBXGroup;
+			children = (
+				B88E959426820FC3008CDA4D /* README.md */,
+			);
+			name = Readme;
+			sourceTree = "<group>";
+		};
+		B8FC6AFB22EF01C9005B91DE /* Schnauzer */ = {
+			isa = PBXGroup;
+			children = (
+				C0080D8B276C9A9C00510D6A /* SNZCrashAnalyzer */,
+			);
+			path = Schnauzer;
+			sourceTree = "<group>";
+		};
+		C0080D8B276C9A9C00510D6A /* SNZCrashAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				C0080D90276C9BAF00510D6A /* SNZCrashAnalyzer.h */,
+				C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */,
+			);
+			path = SNZCrashAnalyzer;
+			sourceTree = "<group>";
+		};
+		C0080DCB276EF3BB00510D6A /* SchnauzerApplication */ = {
+			isa = PBXGroup;
+			children = (
+				C0080DCC276EF3BB00510D6A /* AppDelegate.h */,
+				C0080DD1276EF3BB00510D6A /* AppDelegate.m */,
+				C0080DCD276EF3BB00510D6A /* Assets.xcassets */,
+				C0080DD2276EF3BB00510D6A /* Info.plist */,
+				C0080DCE276EF3BB00510D6A /* LaunchScreen.storyboard */,
+				C0080DD0276EF3BB00510D6A /* main.m */,
+			);
+			path = SchnauzerApplication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B85D45A2240E84DA00CBF758 /* SchnauzerApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B85D45BB240E84DC00CBF758 /* Build configuration list for PBXNativeTarget "SchnauzerApplication" */;
+			buildPhases = (
+				87D28574213CF836230CEA12 /* [CP] Check Pods Manifest.lock */,
+				B85D459F240E84DA00CBF758 /* Sources */,
+				B85D45A0240E84DA00CBF758 /* Frameworks */,
+				B85D45A1240E84DA00CBF758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchnauzerApplication;
+			productName = PoodleApplication;
+			productReference = B85D45A3240E84DA00CBF758 /* SchnauzerApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B88DB4C622EAF14B003D20F6 /* SchnauzerLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88DB4D022EAF14B003D20F6 /* Build configuration list for PBXNativeTarget "SchnauzerLibrary" */;
+			buildPhases = (
+				74F125AF14E237608D460ED5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0080DA0276C9C9000510D6A /* PBXTargetDependency */,
+			);
+			name = SchnauzerLibrary;
+			productName = PoodleLibrary;
+			productReference = B88DB4C722EAF14B003D20F6 /* libSchnauzerLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B8FC6C0322EF0540005B91DE /* SchnauzerLibraryTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FC6C0A22EF0540005B91DE /* Build configuration list for PBXNativeTarget "SchnauzerLibraryTemplate" */;
+			buildPhases = (
+				B8FC6C0422EF0540005B91DE /* Sources */,
+				B8FC6C0622EF0540005B91DE /* Frameworks */,
+				B8FC6C0722EF0540005B91DE /* CopyFiles */,
+				B8FC6C0922EF0540005B91DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchnauzerLibraryTemplate;
+			productName = "CAAnimation+PDLExtension";
+			productReference = B8FC6C0D22EF0540005B91DE /* libSchnauzerLibraryTemplate.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C0080D94276C9C4100510D6A /* SNZCrashAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0080D99276C9C4100510D6A /* Build configuration list for PBXNativeTarget "SNZCrashAnalyzer" */;
+			buildPhases = (
+				E16AFFB2B44B10F78267C145 /* [CP] Check Pods Manifest.lock */,
+				C0080D95276C9C4100510D6A /* Sources */,
+				C0080D96276C9C4100510D6A /* Frameworks */,
+				C0080D97276C9C4100510D6A /* CopyFiles */,
+				C0080D98276C9C4100510D6A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNZCrashAnalyzer;
+			productName = "CAAnimation+PDLExtension";
+			productReference = C0080D9C276C9C4100510D6A /* libSNZCrashAnalyzer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B88DB4BF22EAF14B003D20F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PDL;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Poodle;
+				TargetAttributes = {
+					B85D45A2240E84DA00CBF758 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					B88DB4C622EAF14B003D20F6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B88DB4C222EAF14B003D20F6 /* Build configuration list for PBXProject "Schnauzer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B88DB4BE22EAF14B003D20F6;
+			productRefGroup = B88DB4C822EAF14B003D20F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B85D45A2240E84DA00CBF758 /* SchnauzerApplication */,
+				B88DB4C622EAF14B003D20F6 /* SchnauzerLibrary */,
+				B8FC6C0322EF0540005B91DE /* SchnauzerLibraryTemplate */,
+				C0080D94276C9C4100510D6A /* SNZCrashAnalyzer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B85D45A1240E84DA00CBF758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0080DD3276EF3BB00510D6A /* Assets.xcassets in Resources */,
+				C0080DD4276EF3BB00510D6A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87D28574213CF836230CEA12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SchnauzerApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FC6C0922EF0540005B91DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${PROJECT_DIR}/SchnauzerLibraryMerge.sh\"\n";
+		};
+		C0080D98276C9C4100510D6A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${PROJECT_DIR}/SchnauzerLibraryMerge.sh\"\n";
+		};
+		E16AFFB2B44B10F78267C145 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNZCrashAnalyzer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B85D459F240E84DA00CBF758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0080DD5276EF3BB00510D6A /* main.m in Sources */,
+				C0080D91276C9BAF00510D6A /* SNZCrashAnalyzer.m in Sources */,
+				C0080DD6276EF3BB00510D6A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FC6C0422EF0540005B91DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0080D95276C9C4100510D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0080D9D276C9C5100510D6A /* SNZCrashAnalyzer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0080DA0276C9C9000510D6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0080D94276C9C4100510D6A /* SNZCrashAnalyzer */;
+			targetProxy = C0080D9F276C9C9000510D6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0080DCE276EF3BB00510D6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0080DCF276EF3BB00510D6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B85D45B9240E84DC00CBF758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476436C1F1141CBC5B95FCCD /* Pods-SchnauzerApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SchnauzerApplication/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = snz.SchnauzerApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B85D45BA240E84DC00CBF758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD07D0B4D6CEA46A807828C /* Pods-SchnauzerApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SchnauzerApplication/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snz.SchnauzerApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B88DB4CE22EAF14B003D20F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
+				"ARCHS[sdk=iphonesimulator*]" = (
+					i386,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B88DB4CF22EAF14B003D20F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
+				"ARCHS[sdk=iphonesimulator*]" = (
+					i386,
+					x86_64,
+				);
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B88DB4D122EAF14B003D20F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B88DB4D222EAF14B003D20F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8FC6C0B22EF0540005B91DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8FC6C0C22EF0540005B91DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0080D9A276C9C4100510D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34CB807818503565709FB660 /* Pods-SNZCrashAnalyzer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0080D9B276C9C4100510D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411583239D04737E3419466C /* Pods-SNZCrashAnalyzer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B85D45BB240E84DC00CBF758 /* Build configuration list for PBXNativeTarget "SchnauzerApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B85D45B9240E84DC00CBF758 /* Debug */,
+				B85D45BA240E84DC00CBF758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DB4C222EAF14B003D20F6 /* Build configuration list for PBXProject "Schnauzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DB4CE22EAF14B003D20F6 /* Debug */,
+				B88DB4CF22EAF14B003D20F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DB4D022EAF14B003D20F6 /* Build configuration list for PBXNativeTarget "SchnauzerLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DB4D122EAF14B003D20F6 /* Debug */,
+				B88DB4D222EAF14B003D20F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FC6C0A22EF0540005B91DE /* Build configuration list for PBXNativeTarget "SchnauzerLibraryTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FC6C0B22EF0540005B91DE /* Debug */,
+				B8FC6C0C22EF0540005B91DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0080D99276C9C4100510D6A /* Build configuration list for PBXNativeTarget "SNZCrashAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0080D9A276C9C4100510D6A /* Debug */,
+				C0080D9B276C9C4100510D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B88DB4BF22EAF14B003D20F6 /* Project object */;
+}

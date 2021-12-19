@@ -1,0 +1,42 @@
+PODS:
+  - "Poodle/NSMapTable+PDLExtension (0.0.1)"
+  - Poodle/pdl_mach_o_symbols (0.0.1):
+    - Poodle/pdl_mach_object
+  - Poodle/pdl_mach_object (0.0.1)
+  - Poodle/PDLColor (0.0.1)
+  - Poodle/PDLCrash (0.0.1):
+    - Poodle/PDLSharedCache
+    - Poodle/PDLSystemImage
+  - Poodle/PDLDatabase (0.0.1)
+  - Poodle/PDLFileSystem (0.0.1)
+  - Poodle/PDLFileSystemViewController (0.0.1):
+    - Poodle/PDLColor
+    - Poodle/PDLCrash
+    - Poodle/PDLDatabase
+    - Poodle/PDLFileSystem
+    - Poodle/PDLFormView
+    - Poodle/PDLViewController
+  - Poodle/PDLFormView (0.0.1):
+    - "Poodle/NSMapTable+PDLExtension"
+  - Poodle/PDLSharedCache (0.0.1):
+    - Poodle/pdl_mach_o_symbols
+    - Poodle/pdl_mach_object
+  - Poodle/PDLSystemImage (0.0.1):
+    - Poodle/pdl_mach_object
+  - Poodle/PDLViewController (0.0.1)
+  - "Poodle/UIViewController+PDLNavigationBar (0.0.1)"
+
+DEPENDENCIES:
+  - Poodle/PDLFileSystemViewController (from `../Poodle`)
+  - "Poodle/UIViewController+PDLNavigationBar (from `../Poodle`)"
+
+EXTERNAL SOURCES:
+  Poodle:
+    :path: "../Poodle"
+
+SPEC CHECKSUMS:
+  Poodle: 2937c2bad71d9ab0cb7de78d156a9cd4143b784c
+
+PODFILE CHECKSUM: 8a01a5149c8625438573669fb52d2b1716d586d4
+
+COCOAPODS: 1.10.2
