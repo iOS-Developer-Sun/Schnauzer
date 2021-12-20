@@ -18,6 +18,10 @@ target 'SNZCrashAnalyzer' do
   pod_poodle
 end
 
+target 'SNZNonThreadSafeAnalyzer' do
+  pod_poodle
+end
+
 target 'SchnauzerApplication' do
   pod_poodle
 end

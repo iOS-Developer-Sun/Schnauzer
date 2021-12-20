@@ -39,7 +39,7 @@ static BOOL _logEnabled = NO;
     _logEnabled = logEnabled;
 }
 
-static NSMutableDictionary *SNZNonThreadSafeAnalyzerMap(void) {
+static NSMutableDictionary *SNZNonThreadSafeAnalyzerPropertiesMap(void) {
     static NSMutableDictionary *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -49,16 +49,16 @@ static NSMutableDictionary *SNZNonThreadSafeAnalyzerMap(void) {
     return _instance;
 }
 
-+ (NSArray *)suspiciousItems {
-    NSArray *array = [[SNZNonThreadSafeAnalyzerMap() allKeys] sortedArrayUsingSelector:@selector(compare:)];
++ (NSArray *)suspiciousProperties {
+    NSArray *array = [[SNZNonThreadSafeAnalyzerPropertiesMap() allKeys] sortedArrayUsingSelector:@selector(compare:)];
     return array;
 }
 
-+ (NSDictionary *)suspiciousItemsMap {
-    return [SNZNonThreadSafeAnalyzerMap() copy];
++ (NSDictionary *)suspiciousPropertiesMap {
+    return [SNZNonThreadSafeAnalyzerPropertiesMap() copy];
 }
 
-NSMutableSet *PDLDebugNonThreadSafeDictionaries(void) {
+NSMutableSet *SNZNonThreadSafeAnalyzerDictionaries(void) {
     static NSMutableSet *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -67,11 +67,15 @@ NSMutableSet *PDLDebugNonThreadSafeDictionaries(void) {
     return _instance;
 }
 
++ (NSArray *)suspiciousDictionaries {
+    return [SNZNonThreadSafeAnalyzerDictionaries() allObjects];
+}
+
 + (void)report:(PDLNonThreadSafeObserverCriticalResource *)resource {
     @synchronized (self) {
         if ([resource isKindOfClass:[PDLNonThreadSafePropertyObserverProperty class]]) {
             PDLNonThreadSafePropertyObserverProperty *property = (PDLNonThreadSafePropertyObserverProperty *)resource;
-            NSMutableDictionary *dictionary = SNZNonThreadSafeAnalyzerMap();
+            NSMutableDictionary *dictionary = SNZNonThreadSafeAnalyzerPropertiesMap();
             NSMutableSet *set = dictionary[property.identifier];
             if (!set) {
                 set = [NSMutableSet set];
@@ -94,7 +98,7 @@ NSMutableSet *PDLDebugNonThreadSafeDictionaries(void) {
                 NSLog(@"\n");
             }
             PDLNonThreadSafeDictionaryObserverDictionary *dictionary = (PDLNonThreadSafeDictionaryObserverDictionary *)resource;
-            [PDLDebugNonThreadSafeDictionaries() addObject:dictionary];
+            [SNZNonThreadSafeAnalyzerDictionaries() addObject:dictionary];
         }
     }
 }
@@ -133,22 +137,28 @@ NSMutableSet *PDLDebugNonThreadSafeDictionaries(void) {
 
     for (NSString *image in imageArray) {
         [PDLNonThreadSafePropertyObserver observerClassesForImage:image.UTF8String classFilter:^BOOL(NSString * _Nonnull className) {
-            return exclusion(className, nil);
+            if (exclusion) {
+                return exclusion(className, nil);
+            }
+            return NO;
         } classPropertyFilter:^PDLNonThreadSafePropertyObserver_PropertyFilter _Nullable(NSString * _Nonnull className) {
-            BOOL excluded = exclusion(className, nil);
-            if (excluded) {
+            if (exclusion) {
+                BOOL excluded = exclusion(className, nil);
+                if (excluded) {
+                    return ^BOOL (NSString *propertyName) {
+                        return YES;
+                    };
+                }
                 return ^BOOL (NSString *propertyName) {
-                    return YES;
+                    return exclusion(className, propertyName);
                 };
             }
-            return ^BOOL (NSString *propertyName) {
-                return exclusion(className, propertyName);
-            };
+            return nil;
         } classPropertyMapFilter:nil];
     }
 }
 
-+ (void)checkDictionary {
++ (void)checkDictionary:(BOOL(^_Nullable)(NSString *frame))exclusion {
     [self preload];
 
     NSArray *dictionaryFilter = @[
@@ -161,6 +171,7 @@ NSMutableSet *PDLDebugNonThreadSafeDictionaries(void) {
         @"_CFURLCachePersistMemoryToDiskNow",
         @"-[FBSWorkspaceScenesClient initWithEndpoint:queue:calloutQueue:workspace:]",
         @"+[BSXPCServiceConnectionPeer peerOfConnection:]",
+        @"-[BKSHIDEventDeliveryManager _initWithService:]",
     ];
 
     NSArray *invalidFrames = @[
@@ -179,6 +190,10 @@ NSMutableSet *PDLDebugNonThreadSafeDictionaries(void) {
             }
         }];
         if (firstFrame.length > 0 && [dictionaryFilter containsObject:firstFrame]) {
+            return YES;
+        }
+
+        if (exclusion && exclusion(firstFrame)) {
             return YES;
         }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12465B18E87BEAA48C0657F8 /* libPods-SNZCrashAnalyzer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB6A753FEB6D109D56F39C0 /* libPods-SNZCrashAnalyzer.a */; };
 		37DA314B31CD332C246E476A /* libPods-SchnauzerApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79444A52BC44F98AABEC73 /* libPods-SchnauzerApplication.a */; };
+		7B7764E70C43F3AC3991D06B /* libPods-SNZNonThreadSafeAnalyzer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 070752428D8F4E55A179E648 /* libPods-SNZNonThreadSafeAnalyzer.a */; };
 		C0080D91276C9BAF00510D6A /* SNZCrashAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */; };
 		C0080D9D276C9C5100510D6A /* SNZCrashAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */; };
 		C0080D9E276C9C5800510D6A /* SNZCrashAnalyzer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0080D90276C9BAF00510D6A /* SNZCrashAnalyzer.h */; };
@@ -17,6 +18,8 @@
 		C0080DD5276EF3BB00510D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD0276EF3BB00510D6A /* main.m */; };
 		C0080DD6276EF3BB00510D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD1276EF3BB00510D6A /* AppDelegate.m */; };
 		C06B8F272770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
+		C06B8F2A27704A9400B6A8A3 /* SNZNonThreadSafeAnalyzer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */; };
+		C06B8F2B27704A9B00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C0080D94276C9C4100510D6A;
 			remoteInfo = SNZCrashAnalyzer;
+		};
+		C06B8F2827704A6800B6A8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B88DB4BF22EAF14B003D20F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C06B8F1B2770363600B6A8A3;
+			remoteInfo = SNZNonThreadSafeAnalyzer;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,18 +65,22 @@
 			dstPath = "${TARGETNAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				C06B8F2A27704A9400B6A8A3 /* SNZNonThreadSafeAnalyzer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		070752428D8F4E55A179E648 /* libPods-SNZNonThreadSafeAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNZNonThreadSafeAnalyzer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141171D098BBE2C09BC0D987 /* Pods-SNZNonThreadSafeAnalyzer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNZNonThreadSafeAnalyzer.release.xcconfig"; path = "Target Support Files/Pods-SNZNonThreadSafeAnalyzer/Pods-SNZNonThreadSafeAnalyzer.release.xcconfig"; sourceTree = "<group>"; };
 		34CB807818503565709FB660 /* Pods-SNZCrashAnalyzer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNZCrashAnalyzer.debug.xcconfig"; path = "Target Support Files/Pods-SNZCrashAnalyzer/Pods-SNZCrashAnalyzer.debug.xcconfig"; sourceTree = "<group>"; };
 		411583239D04737E3419466C /* Pods-SNZCrashAnalyzer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNZCrashAnalyzer.release.xcconfig"; path = "Target Support Files/Pods-SNZCrashAnalyzer/Pods-SNZCrashAnalyzer.release.xcconfig"; sourceTree = "<group>"; };
 		476436C1F1141CBC5B95FCCD /* Pods-SchnauzerApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchnauzerApplication.debug.xcconfig"; path = "Target Support Files/Pods-SchnauzerApplication/Pods-SchnauzerApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		6AB6A753FEB6D109D56F39C0 /* libPods-SNZCrashAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNZCrashAnalyzer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD07D0B4D6CEA46A807828C /* Pods-SchnauzerApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchnauzerApplication.release.xcconfig"; path = "Target Support Files/Pods-SchnauzerApplication/Pods-SchnauzerApplication.release.xcconfig"; sourceTree = "<group>"; };
 		7F79444A52BC44F98AABEC73 /* libPods-SchnauzerApplication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SchnauzerApplication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0A21F8FAAE8275DF614507 /* Pods-SNZNonThreadSafeAnalyzer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNZNonThreadSafeAnalyzer.debug.xcconfig"; path = "Target Support Files/Pods-SNZNonThreadSafeAnalyzer/Pods-SNZNonThreadSafeAnalyzer.debug.xcconfig"; sourceTree = "<group>"; };
 		B85D459E240E7CF100CBF758 /* SchnauzerLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SchnauzerLibrary; sourceTree = "<group>"; };
 		B85D45A3240E84DA00CBF758 /* SchnauzerApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchnauzerApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DB4C722EAF14B003D20F6 /* libSchnauzerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSchnauzerLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7764E70C43F3AC3991D06B /* libPods-SNZNonThreadSafeAnalyzer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +153,8 @@
 				411583239D04737E3419466C /* Pods-SNZCrashAnalyzer.release.xcconfig */,
 				476436C1F1141CBC5B95FCCD /* Pods-SchnauzerApplication.debug.xcconfig */,
 				7BD07D0B4D6CEA46A807828C /* Pods-SchnauzerApplication.release.xcconfig */,
+				8F0A21F8FAAE8275DF614507 /* Pods-SNZNonThreadSafeAnalyzer.debug.xcconfig */,
+				141171D098BBE2C09BC0D987 /* Pods-SNZNonThreadSafeAnalyzer.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,6 +164,7 @@
 			children = (
 				6AB6A753FEB6D109D56F39C0 /* libPods-SNZCrashAnalyzer.a */,
 				7F79444A52BC44F98AABEC73 /* libPods-SchnauzerApplication.a */,
+				070752428D8F4E55A179E648 /* libPods-SNZNonThreadSafeAnalyzer.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,6 +300,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C06B8F2927704A6800B6A8A3 /* PBXTargetDependency */,
 				C0080DA0276C9C9000510D6A /* PBXTargetDependency */,
 			);
 			name = SchnauzerLibrary;
@@ -330,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06B8F202770363600B6A8A3 /* Build configuration list for PBXNativeTarget "SNZNonThreadSafeAnalyzer" */;
 			buildPhases = (
+				02A0476AACA4006246D402FE /* [CP] Check Pods Manifest.lock */,
 				C06B8F1C2770363600B6A8A3 /* Sources */,
 				C06B8F1D2770363600B6A8A3 /* Frameworks */,
 				C06B8F1E2770363600B6A8A3 /* CopyFiles */,
@@ -397,6 +417,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02A0476AACA4006246D402FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNZNonThreadSafeAnalyzer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		87D28574213CF836230CEA12 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06B8F2B27704A9B00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +578,11 @@
 			isa = PBXTargetDependency;
 			target = C0080D94276C9C4100510D6A /* SNZCrashAnalyzer */;
 			targetProxy = C0080D9F276C9C9000510D6A /* PBXContainerItemProxy */;
+		};
+		C06B8F2927704A6800B6A8A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C06B8F1B2770363600B6A8A3 /* SNZNonThreadSafeAnalyzer */;
+			targetProxy = C06B8F2827704A6800B6A8A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -788,6 +836,7 @@
 		};
 		C06B8F212770363600B6A8A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0A21F8FAAE8275DF614507 /* Pods-SNZNonThreadSafeAnalyzer.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -799,6 +848,7 @@
 		};
 		C06B8F222770363600B6A8A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 141171D098BBE2C09BC0D987 /* Pods-SNZNonThreadSafeAnalyzer.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
