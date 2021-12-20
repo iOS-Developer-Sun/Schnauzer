@@ -46,9 +46,9 @@
 
 @interface SNZCrashAnalyzer : NSObject
 
-@property (nonatomic, copy, class) void(^presenter)(UIViewController *viewController);
+@property (nonatomic, copy, class) void(^presenter)(NSArray <__kindof UIViewController *> *viewControllers);
 
 + (void)handleCrashFile:(NSString *)path;
-+ (void)present:(UIViewController *)viewController;
++ (void)present:(NSArray <__kindof UIViewController *> *)viewControllers;
 
 @end
