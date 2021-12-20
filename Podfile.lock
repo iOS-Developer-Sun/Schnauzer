@@ -1,8 +1,17 @@
 PODS:
   - "Poodle/NSMapTable+PDLExtension (0.0.1)"
+  - "Poodle/NSObject+PDLAssociation (0.0.1)"
+  - "Poodle/NSObject+PDLDebug (0.0.1)"
+  - "Poodle/NSObject+PDLImplementationInterceptor (0.0.1)"
+  - Poodle/pdl_backtrace (0.0.1):
+    - Poodle/pdl_thread
+  - Poodle/pdl_dispatch (0.0.1)
   - Poodle/pdl_mach_o_symbols (0.0.1):
     - Poodle/pdl_mach_object
   - Poodle/pdl_mach_object (0.0.1)
+  - Poodle/pdl_thread (0.0.1)
+  - Poodle/PDLBacktrace (0.0.1):
+    - Poodle/pdl_backtrace
   - Poodle/PDLColor (0.0.1)
   - Poodle/PDLCrash (0.0.1):
     - Poodle/PDLSharedCache
@@ -18,6 +27,16 @@ PODS:
     - Poodle/PDLViewController
   - Poodle/PDLFormView (0.0.1):
     - "Poodle/NSMapTable+PDLExtension"
+  - Poodle/PDLNonThreadSafeObserver (0.0.1):
+    - "Poodle/NSObject+PDLDebug"
+    - "Poodle/NSObject+PDLImplementationInterceptor"
+    - Poodle/pdl_dispatch
+    - Poodle/PDLBacktrace
+    - Poodle/PDLCrash
+    - Poodle/PDLPrivate
+    - Poodle/PDLProcessInfo
+  - Poodle/PDLPrivate (0.0.1)
+  - Poodle/PDLProcessInfo (0.0.1)
   - Poodle/PDLSharedCache (0.0.1):
     - Poodle/pdl_mach_o_symbols
     - Poodle/pdl_mach_object
@@ -27,7 +46,9 @@ PODS:
   - "Poodle/UIViewController+PDLNavigationBar (0.0.1)"
 
 DEPENDENCIES:
+  - "Poodle/NSObject+PDLAssociation (from `../Poodle`)"
   - Poodle/PDLFileSystemViewController (from `../Poodle`)
+  - Poodle/PDLNonThreadSafeObserver (from `../Poodle`)
   - "Poodle/UIViewController+PDLNavigationBar (from `../Poodle`)"
 
 EXTERNAL SOURCES:
@@ -35,8 +56,8 @@ EXTERNAL SOURCES:
     :path: "../Poodle"
 
 SPEC CHECKSUMS:
-  Poodle: 2937c2bad71d9ab0cb7de78d156a9cd4143b784c
+  Poodle: 57c36d29c3c889aed3f67f49be8a36800f640e5d
 
-PODFILE CHECKSUM: 8a01a5149c8625438573669fb52d2b1716d586d4
+PODFILE CHECKSUM: 5bb959c0da2d6dab17cbe32fe5dd9c5ab64735db
 
 COCOAPODS: 1.10.2

@@ -56,5 +56,16 @@ def SchnauzerSpec(name, poodle_pod_name, path: nil, is_library: false, default_s
             ss.dependency poodle_pod_name + '/PDLFileSystemViewController'
             ss.dependency poodle_pod_name + '/UIViewController+PDLNavigationBar'
         end
+
+        s.subspec 'SNZNonThreadSafeAnalyzer' do |ss|
+            ss.platform = platform_universal
+            ss.osx.deployment_target  = '10.10'
+            ss.ios.deployment_target  = '9.0'
+            ss.source_files = base + 'SNZNonThreadSafeAnalyzer/' + source_files
+            ss.vendored_library = base + 'SNZNonThreadSafeAnalyzer/' + librariy_files
+            ss.dependency poodle_pod_name + '/PDLNonThreadSafeObserver'
+            ss.dependency poodle_pod_name + '/NSObject+PDLAssociation'
+        end
+
     end
 end

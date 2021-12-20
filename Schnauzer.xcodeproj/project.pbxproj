@@ -16,6 +16,7 @@
 		C0080DD4276EF3BB00510D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0080DCE276EF3BB00510D6A /* LaunchScreen.storyboard */; };
 		C0080DD5276EF3BB00510D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD0276EF3BB00510D6A /* main.m */; };
 		C0080DD6276EF3BB00510D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD1276EF3BB00510D6A /* AppDelegate.m */; };
+		C06B8F272770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C06B8F1E2770363600B6A8A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${TARGETNAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +85,9 @@
 		C0080DD0276EF3BB00510D6A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0080DD1276EF3BB00510D6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C0080DD2276EF3BB00510D6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06B8F232770363600B6A8A3 /* libSNZNonThreadSafeAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNZNonThreadSafeAnalyzer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNZNonThreadSafeAnalyzer.m; sourceTree = "<group>"; };
+		C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNZNonThreadSafeAnalyzer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +118,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12465B18E87BEAA48C0657F8 /* libPods-SNZCrashAnalyzer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C06B8F1D2770363600B6A8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +187,7 @@
 				B8FC6C0D22EF0540005B91DE /* libSchnauzerLibraryTemplate.a */,
 				B85D45A3240E84DA00CBF758 /* SchnauzerApplication.app */,
 				C0080D9C276C9C4100510D6A /* libSNZCrashAnalyzer.a */,
+				C06B8F232770363600B6A8A3 /* libSNZNonThreadSafeAnalyzer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				C0080D8B276C9A9C00510D6A /* SNZCrashAnalyzer */,
+				C06B8F242770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer */,
 			);
 			path = Schnauzer;
 			sourceTree = "<group>";
@@ -219,6 +241,15 @@
 				C0080DD0276EF3BB00510D6A /* main.m */,
 			);
 			path = SchnauzerApplication;
+			sourceTree = "<group>";
+		};
+		C06B8F242770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */,
+				C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */,
+			);
+			path = SNZNonThreadSafeAnalyzer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +326,24 @@
 			productReference = C0080D9C276C9C4100510D6A /* libSNZCrashAnalyzer.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C06B8F1B2770363600B6A8A3 /* SNZNonThreadSafeAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C06B8F202770363600B6A8A3 /* Build configuration list for PBXNativeTarget "SNZNonThreadSafeAnalyzer" */;
+			buildPhases = (
+				C06B8F1C2770363600B6A8A3 /* Sources */,
+				C06B8F1D2770363600B6A8A3 /* Frameworks */,
+				C06B8F1E2770363600B6A8A3 /* CopyFiles */,
+				C06B8F1F2770363600B6A8A3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNZNonThreadSafeAnalyzer;
+			productName = "CAAnimation+PDLExtension";
+			productReference = C06B8F232770363600B6A8A3 /* libSNZNonThreadSafeAnalyzer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -330,6 +379,7 @@
 				B88DB4C622EAF14B003D20F6 /* SchnauzerLibrary */,
 				B8FC6C0322EF0540005B91DE /* SchnauzerLibraryTemplate */,
 				C0080D94276C9C4100510D6A /* SNZCrashAnalyzer */,
+				C06B8F1B2770363600B6A8A3 /* SNZNonThreadSafeAnalyzer */,
 			);
 		};
 /* End PBXProject section */
@@ -403,6 +453,23 @@
 			shellPath = /bin/sh;
 			shellScript = "sh \"${PROJECT_DIR}/SchnauzerLibraryMerge.sh\"\n";
 		};
+		C06B8F1F2770363600B6A8A3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${PROJECT_DIR}/SchnauzerLibraryMerge.sh\"\n";
+		};
 		E16AFFB2B44B10F78267C145 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C06B8F272770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */,
 				C0080DD5276EF3BB00510D6A /* main.m in Sources */,
 				C0080D91276C9BAF00510D6A /* SNZCrashAnalyzer.m in Sources */,
 				C0080DD6276EF3BB00510D6A /* AppDelegate.m in Sources */,
@@ -450,6 +518,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0080D9D276C9C5100510D6A /* SNZCrashAnalyzer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C06B8F1C2770363600B6A8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +786,28 @@
 			};
 			name = Release;
 		};
+		C06B8F212770363600B6A8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C06B8F222770363600B6A8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -755,6 +852,15 @@
 			buildConfigurations = (
 				C0080D9A276C9C4100510D6A /* Debug */,
 				C0080D9B276C9C4100510D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C06B8F202770363600B6A8A3 /* Build configuration list for PBXNativeTarget "SNZNonThreadSafeAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C06B8F212770363600B6A8A3 /* Debug */,
+				C06B8F222770363600B6A8A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

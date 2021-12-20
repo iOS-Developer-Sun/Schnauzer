@@ -9,6 +9,8 @@ def pod_poodle
   :subspecs => [
     'PDLFileSystemViewController',
     'UIViewController+PDLNavigationBar',
+    'PDLNonThreadSafeObserver',
+    'NSObject+PDLAssociation',
   ]
 end
 
