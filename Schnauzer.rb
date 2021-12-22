@@ -87,7 +87,7 @@ def SchnauzerSpec(name, poodle_pod_name, path: nil, is_library: false, is_macos:
         platform_ios = { :ios => ios_version }
         platform_universal = { :osx => osx_version, :ios => ios_version }
 
-        SchnauzerSubspec(s, 'SNZCrashAnalyzer', platform_universal) do |ss|
+        SchnauzerSubspec(s, 'SNZCrashAnalyzer', platform_ios) do |ss|
             ss.dependency poodle_pod_name + '/PDLFileSystemViewController'
             ss.dependency poodle_pod_name + '/UIViewController+PDLNavigationBar'
         end

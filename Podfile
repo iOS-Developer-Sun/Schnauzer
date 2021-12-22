@@ -2,10 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 def pod_poodle
   platform :ios, '9.0'
-  pod 'Poodle',
-  #  pod 'PoodleLibrary',
-  :path => '../Poodle',
-  #  :git => 'https://github.com/iOS-Developer-Sun/Poodle.git',
+  pod 'PoodleLibrary',
   :subspecs => [
     'PDLFileSystemViewController',
     'UIViewController+PDLNavigationBar',

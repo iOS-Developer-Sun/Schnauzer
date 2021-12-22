@@ -1,63 +1,65 @@
 PODS:
-  - "Poodle/NSMapTable+PDLExtension (0.0.1)"
-  - "Poodle/NSObject+PDLAssociation (0.0.1)"
-  - "Poodle/NSObject+PDLDebug (0.0.1)"
-  - "Poodle/NSObject+PDLImplementationInterceptor (0.0.1)"
-  - Poodle/pdl_backtrace (0.0.1):
-    - Poodle/pdl_thread
-  - Poodle/pdl_dispatch (0.0.1)
-  - Poodle/pdl_mach_o_symbols (0.0.1):
-    - Poodle/pdl_mach_object
-  - Poodle/pdl_mach_object (0.0.1)
-  - Poodle/pdl_thread (0.0.1)
-  - Poodle/PDLBacktrace (0.0.1):
-    - Poodle/pdl_backtrace
-  - Poodle/PDLColor (0.0.1)
-  - Poodle/PDLCrash (0.0.1):
-    - Poodle/PDLSharedCache
-    - Poodle/PDLSystemImage
-  - Poodle/PDLDatabase (0.0.1)
-  - Poodle/PDLFileSystem (0.0.1)
-  - Poodle/PDLFileSystemViewController (0.0.1):
-    - Poodle/PDLColor
-    - Poodle/PDLCrash
-    - Poodle/PDLDatabase
-    - Poodle/PDLFileSystem
-    - Poodle/PDLFormView
-    - Poodle/PDLViewController
-  - Poodle/PDLFormView (0.0.1):
-    - "Poodle/NSMapTable+PDLExtension"
-  - Poodle/PDLNonThreadSafeObserver (0.0.1):
-    - "Poodle/NSObject+PDLDebug"
-    - "Poodle/NSObject+PDLImplementationInterceptor"
-    - Poodle/pdl_dispatch
-    - Poodle/PDLBacktrace
-    - Poodle/PDLCrash
-    - Poodle/PDLPrivate
-    - Poodle/PDLProcessInfo
-  - Poodle/PDLPrivate (0.0.1)
-  - Poodle/PDLProcessInfo (0.0.1)
-  - Poodle/PDLSharedCache (0.0.1):
-    - Poodle/pdl_mach_o_symbols
-    - Poodle/pdl_mach_object
-  - Poodle/PDLSystemImage (0.0.1):
-    - Poodle/pdl_mach_object
-  - Poodle/PDLViewController (0.0.1)
-  - "Poodle/UIViewController+PDLNavigationBar (0.0.1)"
+  - "PoodleLibrary/NSMapTable+PDLExtension (0.0.1)"
+  - "PoodleLibrary/NSObject+PDLAssociation (0.0.1)"
+  - "PoodleLibrary/NSObject+PDLDebug (0.0.1)"
+  - "PoodleLibrary/NSObject+PDLImplementationInterceptor (0.0.1)"
+  - PoodleLibrary/pdl_backtrace (0.0.1):
+    - PoodleLibrary/pdl_thread
+  - PoodleLibrary/pdl_dispatch (0.0.1)
+  - PoodleLibrary/pdl_mach_o_symbols (0.0.1):
+    - PoodleLibrary/pdl_mach_object
+  - PoodleLibrary/pdl_mach_object (0.0.1)
+  - PoodleLibrary/pdl_thread (0.0.1)
+  - PoodleLibrary/PDLBacktrace (0.0.1):
+    - PoodleLibrary/pdl_backtrace
+    - PoodleLibrary/PDLCrash
+  - PoodleLibrary/PDLColor (0.0.1)
+  - PoodleLibrary/PDLCrash (0.0.1):
+    - PoodleLibrary/PDLSharedCache
+    - PoodleLibrary/PDLSystemImage
+  - PoodleLibrary/PDLDatabase (0.0.1)
+  - PoodleLibrary/PDLFileSystem (0.0.1)
+  - PoodleLibrary/PDLFileSystemViewController (0.0.1):
+    - PoodleLibrary/PDLColor
+    - PoodleLibrary/PDLCrash
+    - PoodleLibrary/PDLDatabase
+    - PoodleLibrary/PDLFileSystem
+    - PoodleLibrary/PDLFormView
+    - PoodleLibrary/PDLViewController
+  - PoodleLibrary/PDLFormView (0.0.1):
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+  - PoodleLibrary/PDLNonThreadSafeObserver (0.0.1):
+    - "PoodleLibrary/NSObject+PDLDebug"
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_dispatch
+    - PoodleLibrary/PDLBacktrace
+    - PoodleLibrary/PDLCrash
+    - PoodleLibrary/PDLPrivate
+    - PoodleLibrary/PDLProcessInfo
+  - PoodleLibrary/PDLPrivate (0.0.1)
+  - PoodleLibrary/PDLProcessInfo (0.0.1)
+  - PoodleLibrary/PDLSharedCache (0.0.1):
+    - PoodleLibrary/pdl_mach_o_symbols
+    - PoodleLibrary/pdl_mach_object
+  - PoodleLibrary/PDLSystemImage (0.0.1):
+    - PoodleLibrary/pdl_mach_object
+  - PoodleLibrary/PDLViewController (0.0.1):
+    - PoodleLibrary/PDLColor
+  - "PoodleLibrary/UIViewController+PDLNavigationBar (0.0.1)"
 
 DEPENDENCIES:
-  - "Poodle/NSObject+PDLAssociation (from `../Poodle`)"
-  - Poodle/PDLFileSystemViewController (from `../Poodle`)
-  - Poodle/PDLNonThreadSafeObserver (from `../Poodle`)
-  - "Poodle/UIViewController+PDLNavigationBar (from `../Poodle`)"
+  - "PoodleLibrary/NSObject+PDLAssociation"
+  - PoodleLibrary/PDLFileSystemViewController
+  - PoodleLibrary/PDLNonThreadSafeObserver
+  - "PoodleLibrary/UIViewController+PDLNavigationBar"
 
-EXTERNAL SOURCES:
-  Poodle:
-    :path: "../Poodle"
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PoodleLibrary
 
 SPEC CHECKSUMS:
-  Poodle: 57c36d29c3c889aed3f67f49be8a36800f640e5d
+  PoodleLibrary: fdbd66552fe1c219ef1e538d8f2d12529a8f6a63
 
-PODFILE CHECKSUM: 31af2aceed42cb9dc5a5c6faa276b1f3a1dfa888
+PODFILE CHECKSUM: ae313c6b76eced3cc7ce7b8b78515f589efee1f9
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.2
