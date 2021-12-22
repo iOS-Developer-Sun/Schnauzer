@@ -1,4 +1,3 @@
-$LOAD_PATH << '.'
-require 'Schnauzer.rb'
+require_relative 'Schnauzer.rb'
 
 SchnauzerSpec('Schnauzer', 'Poodle')
