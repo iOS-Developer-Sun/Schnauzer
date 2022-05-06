@@ -20,6 +20,7 @@ def SchnauzerSubspec(s, name, platform)
     is_macos = hash[:is_macos]
     source_files = hash[:source_files]
     header_files = hash[:header_files]
+    preserve_path = hash[:preserve_path]
     library_files = hash[:library_files]
 
     if is_library
@@ -30,6 +31,7 @@ def SchnauzerSubspec(s, name, platform)
         base = s.snz_hash[:base]
 
         ss.frameworks = 'Foundation'
+        ss.preserve_path = preserve_path
         if is_library
             ss.source_files = base + name + '/' + '**/' + header_files
             if is_macos
@@ -57,6 +59,7 @@ def SchnauzerSpec(name, poodle_pod_name, path: nil, is_library: false, is_macos:
         # constants
         source_files = '*.{h,hpp,c,cc,cpp,m,mm,s,S,o}'.freeze
         header_files = '*.{h,hpp}'.freeze
+        preserve_path = '*.{md,sh,plist}'.freeze
         library_files = '*.a'.freeze
         osx_version = '10.10'.freeze
         ios_version = '9.0'.freeze
@@ -71,6 +74,7 @@ def SchnauzerSpec(name, poodle_pod_name, path: nil, is_library: false, is_macos:
             :is_macos => is_macos,
             :source_files => source_files,
             :header_files => header_files,
+            :preserve_path => preserve_path,
             :library_files => library_files,
         }
 

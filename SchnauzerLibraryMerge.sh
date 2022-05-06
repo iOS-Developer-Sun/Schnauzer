@@ -20,7 +20,7 @@ snz_iphoneos_library="${snz_iphoneos_build}"/lib"${TARGETNAME}".a
 snz_iphonesimulator_library="${snz_iphonesimulator_build}"/lib"${TARGETNAME}".a
 snz_universal_library=ios/lib"${TARGETNAME}".a
 
-cp "${snz_iphoneos_build}/${TARGETNAME}"/*.h . 2>/dev/null
+cp "${snz_iphoneos_build}/${TARGETNAME}"/* . 2>/dev/null
 
 if [ -f "${snz_iphoneos_library}" ] && [ -f "${snz_iphonesimulator_library}" ] ; then
     mkdir ios

@@ -17,6 +17,9 @@
 		C0080DD4276EF3BB00510D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0080DCE276EF3BB00510D6A /* LaunchScreen.storyboard */; };
 		C0080DD5276EF3BB00510D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD0276EF3BB00510D6A /* main.m */; };
 		C0080DD6276EF3BB00510D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080DD1276EF3BB00510D6A /* AppDelegate.m */; };
+		C068B3112824DC9000A43BDF /* SNZCrashAnalyzer.md in CopyFiles */ = {isa = PBXBuildFile; fileRef = C07436ED27742EE9007C1206 /* SNZCrashAnalyzer.md */; };
+		C068B3122824DC9000A43BDF /* SNZCrashAnalyzer.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = C043EA6727A17E9200B89042 /* SNZCrashAnalyzer.plist */; };
+		C068B3132824DC9000A43BDF /* SNZCrashAnalyzer.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = C043EA6627A17E9200B89042 /* SNZCrashAnalyzer.sh */; };
 		C06B8F272770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
 		C06B8F2A27704A9400B6A8A3 /* SNZNonThreadSafeAnalyzer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */; };
 		C06B8F2B27704A9B00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
@@ -55,6 +58,9 @@
 			dstPath = "${TARGETNAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				C068B3112824DC9000A43BDF /* SNZCrashAnalyzer.md in CopyFiles */,
+				C068B3122824DC9000A43BDF /* SNZCrashAnalyzer.plist in CopyFiles */,
+				C068B3132824DC9000A43BDF /* SNZCrashAnalyzer.sh in CopyFiles */,
 				C0080D9E276C9C5800510D6A /* SNZCrashAnalyzer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,9 +105,12 @@
 		C0080DD0276EF3BB00510D6A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0080DD1276EF3BB00510D6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C0080DD2276EF3BB00510D6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C043EA6627A17E9200B89042 /* SNZCrashAnalyzer.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SNZCrashAnalyzer.sh; sourceTree = "<group>"; };
+		C043EA6727A17E9200B89042 /* SNZCrashAnalyzer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SNZCrashAnalyzer.plist; sourceTree = "<group>"; };
 		C06B8F232770363600B6A8A3 /* libSNZNonThreadSafeAnalyzer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSNZNonThreadSafeAnalyzer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNZNonThreadSafeAnalyzer.m; sourceTree = "<group>"; };
 		C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNZNonThreadSafeAnalyzer.h; sourceTree = "<group>"; };
+		C07436ED27742EE9007C1206 /* SNZCrashAnalyzer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SNZCrashAnalyzer.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +253,9 @@
 			children = (
 				C0080D90276C9BAF00510D6A /* SNZCrashAnalyzer.h */,
 				C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */,
+				C07436ED27742EE9007C1206 /* SNZCrashAnalyzer.md */,
+				C043EA6727A17E9200B89042 /* SNZCrashAnalyzer.plist */,
+				C043EA6627A17E9200B89042 /* SNZCrashAnalyzer.sh */,
 			);
 			path = SNZCrashAnalyzer;
 			sourceTree = "<group>";
