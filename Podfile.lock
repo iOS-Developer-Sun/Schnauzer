@@ -1,23 +1,134 @@
 PODS:
+  - "PoodleLibrary/CAAnimation+PDLExtension (0.0.1)"
+  - "PoodleLibrary/CADisplayLink+PDLExtension (0.0.1)"
+  - "PoodleLibrary/CAMediaTimingFunction+PDLExtension (0.0.1)"
+  - "PoodleLibrary/NSCache+PDLExtension (0.0.1)"
+  - "PoodleLibrary/NSCharacterSet+PDLExtension (0.0.1)"
+  - "PoodleLibrary/NSDictionary+PDLObjectForKey (0.0.1)"
+  - "PoodleLibrary/NSJSONSerialization+PDLExtension (0.0.1)"
+  - "PoodleLibrary/NSLock+PDLExtension (0.0.1)"
   - "PoodleLibrary/NSMapTable+PDLExtension (0.0.1)"
+  - "PoodleLibrary/NSMutableDictionary+PDLThreadSafety (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
   - "PoodleLibrary/NSObject+PDLAssociation (0.0.1)"
   - "PoodleLibrary/NSObject+PDLDebug (0.0.1)"
+  - "PoodleLibrary/NSObject+PDLDescription (0.0.1)"
+  - "PoodleLibrary/NSObject+PDLExtension (0.0.1)"
   - "PoodleLibrary/NSObject+PDLImplementationInterceptor (0.0.1)"
+  - "PoodleLibrary/NSObject+PDLMethod (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_asm
+    - PoodleLibrary/pdl_thread_storage
+    - PoodleLibrary/pdl_utils
+  - "PoodleLibrary/NSObject+PDLSelectorProxy (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_asm
+  - "PoodleLibrary/NSObject+PDLThreadSafetifyMethod (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLMethod"
+  - "PoodleLibrary/NSObject+PDLWeakifyUnsafeUnretainedProperty (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+  - "PoodleLibrary/NSThread+PDLExtension (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLExtension"
+    - PoodleLibrary/pdl_mach
+    - PoodleLibrary/pdl_pthread
+  - "PoodleLibrary/NSUserDefaults+PDLExtension (0.0.1)"
+  - PoodleLibrary/pdl_allocation (0.0.1):
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_backtrace
+    - PoodleLibrary/pdl_utils
+  - PoodleLibrary/pdl_asm (0.0.1)
   - PoodleLibrary/pdl_backtrace (0.0.1):
     - PoodleLibrary/pdl_thread
+  - PoodleLibrary/pdl_block (0.0.1)
+  - PoodleLibrary/pdl_die (0.0.1)
   - PoodleLibrary/pdl_dispatch (0.0.1)
+  - PoodleLibrary/pdl_dispatch_backtrace (0.0.1):
+    - PoodleLibrary/pdl_backtrace
+  - PoodleLibrary/pdl_dynamic (0.0.1)
+  - PoodleLibrary/pdl_hook (0.0.1):
+    - PoodleLibrary/pdl_vm
+    - PoodleLibrary/PDLSystemImage
+  - PoodleLibrary/pdl_lldb_hook (0.0.1):
+    - PoodleLibrary/pdl_utils
+    - PoodleLibrary/pdl_vm
+    - PoodleLibrary/PDLSystemImage
+  - PoodleLibrary/pdl_mach (0.0.1)
+  - PoodleLibrary/pdl_mach_o_const_symbols (0.0.1):
+    - PoodleLibrary/pdl_mach_o_symbols
+    - PoodleLibrary/pdl_mach_object
+    - PoodleLibrary/PDLSharedCache
+  - PoodleLibrary/pdl_mach_o_symbol_pointer (0.0.1):
+    - PoodleLibrary/pdl_mach_o_const_symbols
+    - PoodleLibrary/pdl_mach_o_symbols
+    - PoodleLibrary/pdl_mach_object
   - PoodleLibrary/pdl_mach_o_symbols (0.0.1):
     - PoodleLibrary/pdl_mach_object
   - PoodleLibrary/pdl_mach_object (0.0.1)
+  - PoodleLibrary/pdl_malloc (0.0.1):
+    - PoodleLibrary/pdl_backtrace
+    - PoodleLibrary/pdl_utils
+  - PoodleLibrary/pdl_objc_message (0.0.1):
+    - PoodleLibrary/pdl_asm
+    - PoodleLibrary/pdl_thread_storage
+    - PoodleLibrary/pdl_utils
+    - PoodleLibrary/PDLPrivate
+  - PoodleLibrary/pdl_objc_message_hook (0.0.1):
+    - PoodleLibrary/pdl_asm
+    - PoodleLibrary/pdl_dynamic
+    - PoodleLibrary/pdl_objc_message
+    - PoodleLibrary/PDLPrivate
+  - PoodleLibrary/pdl_objc_runtime (0.0.1)
+  - PoodleLibrary/pdl_os (0.0.1)
+  - PoodleLibrary/pdl_pthread (0.0.1):
+    - PoodleLibrary/pdl_mach_o_symbols
+  - PoodleLibrary/pdl_pthread_backtrace (0.0.1):
+    - PoodleLibrary/pdl_backtrace
+    - PoodleLibrary/pdl_thread_storage
+  - PoodleLibrary/pdl_security (0.0.1):
+    - PoodleLibrary/pdl_die
+    - PoodleLibrary/pdl_systemcall
+  - PoodleLibrary/pdl_spinlock (0.0.1)
+  - PoodleLibrary/pdl_system_leak (0.0.1):
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_thread
+  - PoodleLibrary/pdl_systemcall (0.0.1)
   - PoodleLibrary/pdl_thread (0.0.1)
+  - PoodleLibrary/pdl_thread_storage (0.0.1):
+    - PoodleLibrary/pdl_utils
+  - PoodleLibrary/pdl_utils (0.0.1)
+  - PoodleLibrary/pdl_vm (0.0.1)
+  - PoodleLibrary/pdl_zombie (0.0.1):
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+  - PoodleLibrary/PDLAddressQueryViewController (0.0.1):
+    - PoodleLibrary/PDLViewController
+  - PoodleLibrary/PDLApplication (0.0.1):
+    - "PoodleLibrary/CAAnimation+PDLExtension"
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
   - PoodleLibrary/PDLBacktrace (0.0.1):
     - PoodleLibrary/pdl_backtrace
     - PoodleLibrary/PDLCrash
+  - PoodleLibrary/PDLBacktraceRecorder (0.0.1):
+    - PoodleLibrary/PDLBacktrace
+  - PoodleLibrary/PDLBacktraceRecordsItem (0.0.1):
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+    - PoodleLibrary/PDLBacktraceRecorder
+  - PoodleLibrary/PDLBlock (0.0.1):
+    - "PoodleLibrary/NSObject+PDLDebug"
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_block
+    - PoodleLibrary/pdl_thread_storage
+    - PoodleLibrary/PDLBacktrace
+    - PoodleLibrary/PDLSystemImage
+  - PoodleLibrary/PDLCollectionViewFlowLayout (0.0.1)
   - PoodleLibrary/PDLColor (0.0.1)
   - PoodleLibrary/PDLCrash (0.0.1):
     - PoodleLibrary/PDLSharedCache
     - PoodleLibrary/PDLSystemImage
   - PoodleLibrary/PDLDatabase (0.0.1)
+  - PoodleLibrary/PDLDebug (0.0.1):
+    - "PoodleLibrary/NSObject+PDLMethod"
+    - PoodleLibrary/pdl_security
   - PoodleLibrary/PDLFileSystem (0.0.1)
   - PoodleLibrary/PDLFileSystemViewController (0.0.1):
     - PoodleLibrary/PDLColor
@@ -26,8 +137,26 @@ PODS:
     - PoodleLibrary/PDLFileSystem
     - PoodleLibrary/PDLFormView
     - PoodleLibrary/PDLViewController
+  - PoodleLibrary/PDLFontViewController (0.0.1):
+    - PoodleLibrary/PDLViewController
   - PoodleLibrary/PDLFormView (0.0.1):
     - "PoodleLibrary/NSMapTable+PDLExtension"
+  - PoodleLibrary/PDLImageListViewController (0.0.1):
+    - "PoodleLibrary/NSObject+PDLDebug"
+    - PoodleLibrary/PDLKeyboardNotificationObserver
+    - PoodleLibrary/PDLSystemImage
+    - PoodleLibrary/PDLViewController
+  - PoodleLibrary/PDLInitialization (0.0.1):
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/pdl_objc_runtime
+    - PoodleLibrary/PDLDebug
+  - PoodleLibrary/PDLKeyboardNotificationObserver (0.0.1)
+  - PoodleLibrary/PDLLoad (0.0.1):
+    - PoodleLibrary/pdl_objc_runtime
+  - PoodleLibrary/PDLMemoryQueryViewController (0.0.1):
+    - PoodleLibrary/pdl_malloc
+    - PoodleLibrary/PDLKeyboardNotificationObserver
+    - PoodleLibrary/PDLViewController
   - PoodleLibrary/PDLNonThreadSafeObserver (0.0.1):
     - "PoodleLibrary/NSObject+PDLDebug"
     - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
@@ -36,30 +165,170 @@ PODS:
     - PoodleLibrary/PDLCrash
     - PoodleLibrary/PDLPrivate
     - PoodleLibrary/PDLProcessInfo
+  - PoodleLibrary/PDLOpenUrlViewController (0.0.1):
+    - PoodleLibrary/PDLKeyboardNotificationObserver
+    - PoodleLibrary/PDLViewController
+  - PoodleLibrary/PDLOverlayWindow (0.0.1)
+  - PoodleLibrary/PDLPageControl (0.0.1)
+  - PoodleLibrary/PDLPageController (0.0.1):
+    - PoodleLibrary/PDLFormView
+  - PoodleLibrary/PDLPageView (0.0.1):
+    - PoodleLibrary/PDLPageController
+  - PoodleLibrary/PDLPageViewController (0.0.1):
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+    - PoodleLibrary/PDLPageController
   - PoodleLibrary/PDLPrivate (0.0.1)
   - PoodleLibrary/PDLProcessInfo (0.0.1)
+  - PoodleLibrary/PDLPudding (0.0.1)
+  - PoodleLibrary/PDLResizableImageView (0.0.1)
+  - PoodleLibrary/PDLReuseItemManager (0.0.1):
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+  - PoodleLibrary/PDLRunLoopObserver (0.0.1)
+  - PoodleLibrary/PDLSafeOperation (0.0.1):
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+  - PoodleLibrary/PDLScreenDebugger (0.0.1)
+  - PoodleLibrary/PDLScrollPageViewController (0.0.1):
+    - PoodleLibrary/PDLReuseItemManager
+  - PoodleLibrary/PDLSessionTaskStatisticsManager (0.0.1):
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - PoodleLibrary/PDLProcessInfo
   - PoodleLibrary/PDLSharedCache (0.0.1):
     - PoodleLibrary/pdl_mach_o_symbols
     - PoodleLibrary/pdl_mach_object
   - PoodleLibrary/PDLSystemImage (0.0.1):
     - PoodleLibrary/pdl_mach_object
+  - PoodleLibrary/PDLTaskManager (0.0.1)
+  - PoodleLibrary/PDLToolKit_iOS (0.0.1):
+    - "PoodleLibrary/CAAnimation+PDLExtension"
+    - "PoodleLibrary/CADisplayLink+PDLExtension"
+    - "PoodleLibrary/CAMediaTimingFunction+PDLExtension"
+    - "PoodleLibrary/NSCache+PDLExtension"
+    - "PoodleLibrary/NSCharacterSet+PDLExtension"
+    - "PoodleLibrary/NSDictionary+PDLObjectForKey"
+    - "PoodleLibrary/NSJSONSerialization+PDLExtension"
+    - "PoodleLibrary/NSLock+PDLExtension"
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+    - "PoodleLibrary/NSMutableDictionary+PDLThreadSafety"
+    - "PoodleLibrary/NSObject+PDLAssociation"
+    - "PoodleLibrary/NSObject+PDLDebug"
+    - "PoodleLibrary/NSObject+PDLDescription"
+    - "PoodleLibrary/NSObject+PDLExtension"
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+    - "PoodleLibrary/NSObject+PDLMethod"
+    - "PoodleLibrary/NSObject+PDLSelectorProxy"
+    - "PoodleLibrary/NSObject+PDLThreadSafetifyMethod"
+    - "PoodleLibrary/NSObject+PDLWeakifyUnsafeUnretainedProperty"
+    - "PoodleLibrary/NSThread+PDLExtension"
+    - "PoodleLibrary/NSUserDefaults+PDLExtension"
+    - PoodleLibrary/pdl_allocation
+    - PoodleLibrary/pdl_asm
+    - PoodleLibrary/pdl_backtrace
+    - PoodleLibrary/pdl_block
+    - PoodleLibrary/pdl_die
+    - PoodleLibrary/pdl_dispatch
+    - PoodleLibrary/pdl_dispatch_backtrace
+    - PoodleLibrary/pdl_hook
+    - PoodleLibrary/pdl_lldb_hook
+    - PoodleLibrary/pdl_mach
+    - PoodleLibrary/pdl_mach_o_const_symbols
+    - PoodleLibrary/pdl_mach_o_symbol_pointer
+    - PoodleLibrary/pdl_mach_o_symbols
+    - PoodleLibrary/pdl_mach_object
+    - PoodleLibrary/pdl_malloc
+    - PoodleLibrary/pdl_objc_message
+    - PoodleLibrary/pdl_objc_message_hook
+    - PoodleLibrary/pdl_objc_runtime
+    - PoodleLibrary/pdl_os
+    - PoodleLibrary/pdl_pthread
+    - PoodleLibrary/pdl_pthread_backtrace
+    - PoodleLibrary/pdl_security
+    - PoodleLibrary/pdl_spinlock
+    - PoodleLibrary/pdl_system_leak
+    - PoodleLibrary/pdl_systemcall
+    - PoodleLibrary/pdl_thread
+    - PoodleLibrary/pdl_thread_storage
+    - PoodleLibrary/pdl_utils
+    - PoodleLibrary/pdl_vm
+    - PoodleLibrary/pdl_zombie
+    - PoodleLibrary/PDLAddressQueryViewController
+    - PoodleLibrary/PDLApplication
+    - PoodleLibrary/PDLBacktrace
+    - PoodleLibrary/PDLBacktraceRecorder
+    - PoodleLibrary/PDLBacktraceRecordsItem
+    - PoodleLibrary/PDLBlock
+    - PoodleLibrary/PDLCollectionViewFlowLayout
+    - PoodleLibrary/PDLColor
+    - PoodleLibrary/PDLCrash
+    - PoodleLibrary/PDLDatabase
+    - PoodleLibrary/PDLDebug
+    - PoodleLibrary/PDLFileSystem
+    - PoodleLibrary/PDLFileSystemViewController
+    - PoodleLibrary/PDLFontViewController
+    - PoodleLibrary/PDLFormView
+    - PoodleLibrary/PDLImageListViewController
+    - PoodleLibrary/PDLInitialization
+    - PoodleLibrary/PDLKeyboardNotificationObserver
+    - PoodleLibrary/PDLLoad
+    - PoodleLibrary/PDLMemoryQueryViewController
+    - PoodleLibrary/PDLNonThreadSafeObserver
+    - PoodleLibrary/PDLOpenUrlViewController
+    - PoodleLibrary/PDLOverlayWindow
+    - PoodleLibrary/PDLPageControl
+    - PoodleLibrary/PDLPageController
+    - PoodleLibrary/PDLPageView
+    - PoodleLibrary/PDLPageViewController
+    - PoodleLibrary/PDLPrivate
+    - PoodleLibrary/PDLProcessInfo
+    - PoodleLibrary/PDLPudding
+    - PoodleLibrary/PDLResizableImageView
+    - PoodleLibrary/PDLReuseItemManager
+    - PoodleLibrary/PDLRunLoopObserver
+    - PoodleLibrary/PDLSafeOperation
+    - PoodleLibrary/PDLScreenDebugger
+    - PoodleLibrary/PDLScrollPageViewController
+    - PoodleLibrary/PDLSessionTaskStatisticsManager
+    - PoodleLibrary/PDLSharedCache
+    - PoodleLibrary/PDLSystemImage
+    - PoodleLibrary/PDLTaskManager
+    - PoodleLibrary/PDLViewController
+    - PoodleLibrary/PDLViewControllerListViewController
+    - "PoodleLibrary/UINavigationController+PDLLongPressPop"
+    - "PoodleLibrary/UIScreen+PDLExtension"
+    - "PoodleLibrary/UIView+PDLDebug"
+    - "PoodleLibrary/UIViewController+PDLExtension"
+    - "PoodleLibrary/UIViewController+PDLNavigationBar"
+    - "PoodleLibrary/UIViewController+PDLTransitionAnimation"
   - PoodleLibrary/PDLViewController (0.0.1):
     - PoodleLibrary/PDLColor
+  - PoodleLibrary/PDLViewControllerListViewController (0.0.1):
+    - PoodleLibrary/PDLViewController
+  - "PoodleLibrary/UINavigationController+PDLLongPressPop (0.0.1)"
+  - "PoodleLibrary/UIScreen+PDLExtension (0.0.1)"
+  - "PoodleLibrary/UIView+PDLDebug (0.0.1)":
+    - "PoodleLibrary/NSObject+PDLExtension"
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
+  - "PoodleLibrary/UIViewController+PDLExtension (0.0.1)":
+    - "PoodleLibrary/NSMapTable+PDLExtension"
+    - "PoodleLibrary/NSObject+PDLImplementationInterceptor"
   - "PoodleLibrary/UIViewController+PDLNavigationBar (0.0.1)"
+  - "PoodleLibrary/UIViewController+PDLTransitionAnimation (0.0.1)"
 
 DEPENDENCIES:
-  - "PoodleLibrary/NSObject+PDLAssociation"
-  - PoodleLibrary/PDLFileSystemViewController
-  - PoodleLibrary/PDLNonThreadSafeObserver
-  - "PoodleLibrary/UIViewController+PDLNavigationBar"
+  - PoodleLibrary/PDLToolKit_iOS (from `https://github.com/iOS-Developer-Sun/Poodle`, commit `2b217620aaa64eae0b69f361479aef3d12cf2df8`)
 
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - PoodleLibrary
+EXTERNAL SOURCES:
+  PoodleLibrary:
+    :commit: 2b217620aaa64eae0b69f361479aef3d12cf2df8
+    :git: https://github.com/iOS-Developer-Sun/Poodle
+
+CHECKOUT OPTIONS:
+  PoodleLibrary:
+    :commit: 2b217620aaa64eae0b69f361479aef3d12cf2df8
+    :git: https://github.com/iOS-Developer-Sun/Poodle
 
 SPEC CHECKSUMS:
-  PoodleLibrary: fdbd66552fe1c219ef1e538d8f2d12529a8f6a63
+  PoodleLibrary: 1439b6afb80a3110ad8ac8aa3f793bbfead5659a
 
-PODFILE CHECKSUM: ae313c6b76eced3cc7ce7b8b78515f589efee1f9
+PODFILE CHECKSUM: 24e3c63140c47e69aaf853dedc70008fd1c230b8
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.2
