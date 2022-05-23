@@ -44,10 +44,6 @@ snz_iphoneos_library="${snz_iphoneos_build}"/"${TARGETNAME}".framework/"${TARGET
 snz_iphonesimulator_library="${snz_iphonesimulator_build}"/"${TARGETNAME}".framework/"${TARGETNAME}"
 snz_universal_library="${TARGETNAME}".framework/"${TARGETNAME}"
 
-pwd
-cp -rf "${snz_iphoneos_build}"/"${TARGETNAME}".framework . 2>/dev/null
-
 if [ -f "${snz_iphoneos_library}" ] && [ -f "${snz_iphonesimulator_library}" ] ; then
-    lipo -create "${snz_iphoneos_library}" "${snz_iphonesimulator_library}" -output "${snz_universal_library}"
-#    libtool -dynamic "${snz_universal_library}" -o "${snz_universal_library}" 2> /dev/null
+    xcrun xcodebuild -create-xcframework -framework "${snz_iphoneos_build}/${TARGETNAME}.framework" -framework "${snz_iphonesimulator_build}/${TARGETNAME}.framework" -output "${TARGETNAME}.xcframework"
 fi

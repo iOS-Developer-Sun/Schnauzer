@@ -119,23 +119,20 @@ NSMutableSet *SNZNonThreadSafeAnalyzerDictionaries(void) {
 + (void)checkProperties:(BOOL(^)(NSString *className, NSString *propertyName))exclusion {
     [self preload];
 
-    NSMutableArray *imageArray = [NSMutableArray array];
-    const char *image = class_getImageName(self);
-    NSString *imageName = @(image);
-    [imageArray addObject:imageName];
+    NSMutableSet *imageSet = [NSMutableSet set];
+    NSString *prefix = [NSBundle mainBundle].bundlePath;
 
-    NSString *prefix = imageName.stringByDeletingLastPathComponent;
     unsigned int outCount = 0;
     const char **imageNames = objc_copyImageNames(&outCount);
     for (unsigned int i = 0; i < outCount; i++) {
         NSString *name = @(imageNames[i]);
         if ([name hasPrefix:prefix]) {
-            [imageArray addObject:name];
+            [imageSet addObject:name];
         }
     }
     free(imageNames);
 
-    for (NSString *image in imageArray) {
+    for (NSString *image in imageSet) {
         [PDLNonThreadSafePropertyObserver observerClassesForImage:image.UTF8String classFilter:^BOOL(NSString * _Nonnull className) {
             if (exclusion) {
                 return exclusion(className, nil);

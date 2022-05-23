@@ -27,6 +27,9 @@
 		C06B8F272770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
 		C06B8F2A27704A9400B6A8A3 /* SNZNonThreadSafeAnalyzer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */; };
 		C06B8F2B27704A9B00B6A8A3 /* SNZNonThreadSafeAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C06B8F252770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.m */; };
+		C0DEF1722837A3B500482716 /* SNZCrashAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C0080D8F276C9BAF00510D6A /* SNZCrashAnalyzer.m */; };
+		C0DEF1732837A43700482716 /* SNZCrashAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = C0080D90276C9BAF00510D6A /* SNZCrashAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0DEF1742837A43700482716 /* SNZNonThreadSafeAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = C06B8F262770366A00B6A8A3 /* SNZNonThreadSafeAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C068B31D2824F38C00A43BDF /* SchnauzerToolKit.h in Headers */,
+				C0DEF1732837A43700482716 /* SNZCrashAnalyzer.h in Headers */,
+				C0DEF1742837A43700482716 /* SNZNonThreadSafeAnalyzer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +707,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DEF1722837A3B500482716 /* SNZCrashAnalyzer.m in Sources */,
 				C068B32E2824FD8700A43BDF /* SNZNonThreadSafeAnalyzer.m in Sources */,
 				C068B32D2824FC6400A43BDF /* SchnauzerToolKit.m in Sources */,
 			);

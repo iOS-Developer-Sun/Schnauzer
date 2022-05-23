@@ -4,7 +4,7 @@ def pod_poodle
   platform :ios, '9.0'
   pod 'PoodleLibrary',
   :git => 'https://github.com/iOS-Developer-Sun/Poodle',
-  :commit => '2b217620aaa64eae0b69f361479aef3d12cf2df8',
+  :commit => 'b116527396e3d0f2f765fb25480f9c34803c3ff5',
   :subspecs => [
     'PDLToolKit_iOS'
   ]

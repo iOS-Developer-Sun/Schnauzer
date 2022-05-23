@@ -1,6 +1,0 @@
-framework module SchnauzerToolKit {
-  umbrella header "SchnauzerToolKit.h"
-
-  export *
-  module * { export * }
-}

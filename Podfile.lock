@@ -314,21 +314,21 @@ PODS:
   - "PoodleLibrary/UIViewController+PDLTransitionAnimation (0.0.1)"
 
 DEPENDENCIES:
-  - PoodleLibrary/PDLToolKit_iOS (from `https://github.com/iOS-Developer-Sun/Poodle`, commit `2b217620aaa64eae0b69f361479aef3d12cf2df8`)
+  - PoodleLibrary/PDLToolKit_iOS (from `https://github.com/iOS-Developer-Sun/Poodle`, commit `b116527396e3d0f2f765fb25480f9c34803c3ff5`)
 
 EXTERNAL SOURCES:
   PoodleLibrary:
-    :commit: 2b217620aaa64eae0b69f361479aef3d12cf2df8
+    :commit: b116527396e3d0f2f765fb25480f9c34803c3ff5
     :git: https://github.com/iOS-Developer-Sun/Poodle
 
 CHECKOUT OPTIONS:
   PoodleLibrary:
-    :commit: 2b217620aaa64eae0b69f361479aef3d12cf2df8
+    :commit: b116527396e3d0f2f765fb25480f9c34803c3ff5
     :git: https://github.com/iOS-Developer-Sun/Poodle
 
 SPEC CHECKSUMS:
   PoodleLibrary: 1439b6afb80a3110ad8ac8aa3f793bbfead5659a
 
-PODFILE CHECKSUM: 24e3c63140c47e69aaf853dedc70008fd1c230b8
+PODFILE CHECKSUM: 1356ec8dbbf4f6803a0dcb01e8743e1a088b9037
 
 COCOAPODS: 1.10.2
